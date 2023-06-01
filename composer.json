@@ -1,0 +1,56 @@
+{
+    "name": "mykholy/shopping-cart",
+    "description": "An easy-to-use shopping cart for Laravel",
+    "keywords": [
+        "mykholy",
+        "shopping-cart",
+        "laravel"
+    ],
+    "homepage": "https://github.com/mykholy/shopping-cart",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Ahmed Elkholy",
+            "email": "mykholys4@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0|^8.1|^8.2",
+        "ext-json": "*",
+        "illuminate/config": "^6.0|^7.0|^8.0|^9.0|^10.0",
+        "illuminate/database": "^6.20.26|^7.30.5|^8.40.0|^9.0|^10.0",
+        "illuminate/support": "^6.0|^7.0|^8.0|^9.0|^10.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0|^5.0|^6.0|^7.0|^8.0",
+        "phpunit/phpunit": "^8.0|^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mykholy\\ShoppingCart\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mykholy\\ShoppingCart\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mykholy\\ShoppingCart\\CartServiceProvider"
+            ],
+            "aliases": {
+                "Cart": "Mykholy\\ShoppingCart\\Facades\\Cart"
+            }
+        }
+    }
+}

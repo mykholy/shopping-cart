@@ -1,0 +1,32 @@
+Cart Item Options (Mykholy\ShoppingCart\Tests\CartItemOptions)
+ [x] Adds item with options
+ [x] Changes item options
+ [x] Ignores invalid option
+
+Cart Loading (Mykholy\ShoppingCart\Tests\CartLoading)
+ [x] Attaches current cart to user if user doesnt have saved cart
+ [x] Loads saved cart if current cart is empty
+ [x] Overwrites saved cart if current cart is not empty
+
+Cart (Mykholy\ShoppingCart\Tests\Cart)
+ [x] Stores cart identifier in session
+ [x] Adds items to content
+ [x] Updates item
+ [x] Removes item from content
+ [x] Destroys entire cart instance
+ [x] Destroying cart removes cached totals
+
+Service Provider (Mykholy\ShoppingCart\Tests\ServiceProvider)
+ [x] Binds cart to container
+ [x] Aliases cart contract
+ [x] Aliases cart manager
+
+Tax (Mykholy\ShoppingCart\Tests\Tax)
+ [x] Calculates tax in flat mode
+ [x] Calculates tax in per item mode
+ [x] Calculates tax with arbitrary rate input
+
+Totals (Mykholy\ShoppingCart\Tests\Totals)
+ [x] Retrieves content
+ [x] Gives subtotal
+
